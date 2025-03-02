@@ -1,6 +1,6 @@
 ### Polynomial
 
-An algebraic expression that has more than one [term](/Users/yeshayacoffman/Documents/Library/Jol/Math/Algebra/Terminologies/Algebraic Term.md):
+An algebraic expression that has more than one [term](<Algebraic Term.md>):
 
 $a+3$  and  $\frac{a}{b}+\sqrt{3}$ are polynomials of two terms each, they can also be called **binomials** 
 
@@ -10,7 +10,7 @@ $a+3-4b$  and  $a^7b+\frac{2}{a}\div5b$ are polynomials of three terms each, the
 
 ##### Types of Polynomials
 
-Polynomials can be divided in the same way [Terms](/Users/yeshayacoffman/Documents/Library/Jol/Math/Algebra/Terminologies/Algebraic Term.md) divided:
+Polynomials can be divided in the same way [Terms](<Algebraic Term.md>) divided:
 
 1. Whole
 
@@ -20,7 +20,7 @@ Polynomials can be divided in the same way [Terms](/Users/yeshayacoffman/Documen
 
    **Homogenous and Heterogenous**
 
-   When the [**Absolute Degree**](/Users/yeshayacoffman/Documents/Library/Jol/Math/Algebra/Terminologies/Algebraic Term.md) of all it's terms is the same:
+   When the [**Absolute Degree**](<Algebraic Term.md>) of all it's terms is the same:
    $$
    4a^6 +b^4c^2
    $$
