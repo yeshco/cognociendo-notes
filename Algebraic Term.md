@@ -1,4 +1,11 @@
-{"tags": ["math", "algebra"], "level": "3.a"}
+{
+  "tags": [
+    "math",
+    "algebra"
+  ],
+  "level": "3.a",
+  "updated": "2025-03-03T14:49:44.342Z"
+}
 
 ### Algebraic Term
 
@@ -48,4 +55,3 @@ And you can also say that in the first case $a$ has a 'relative' degree of $4$, 
 Terms that their same literals with the same exponents:
 
 $3a^2$ is similar to $a^2$
-

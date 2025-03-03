@@ -1,4 +1,11 @@
-{"tags": ["networks", "websites"], "level": "3.b"}
+{
+  "tags": [
+    "networks",
+    "websites"
+  ],
+  "level": "3.b",
+  "updated": "2025-03-03T14:49:44.342Z"
+}
 
 # DNS record types
 
@@ -19,6 +26,3 @@ Now because the hosting provider wants to be able to filter requests and process
 Here CNAME enters into play and points the request to the hosting domain that will handle the request.
 
 Removing A will make any apex request fail and www would need to be used to access the website. Removing CNAME in this case would make every request fail since CNAME here is the one actually pointing to the hosting domain.
-
-
-

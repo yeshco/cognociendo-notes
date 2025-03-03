@@ -1,4 +1,12 @@
-{"tags": ["hashkafah", "emotions", "tefilah"], "level": "2"}
+{
+  "tags": [
+    "hashkafah",
+    "emotions",
+    "tefilah"
+  ],
+  "level": "2",
+  "updated": "2025-03-03T14:49:44.342Z"
+}
 
 # Scream to God When it Hurts
 
