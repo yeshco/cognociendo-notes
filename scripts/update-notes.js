@@ -171,12 +171,16 @@ function askQuestion(question) {
 }
 
 /**
- * Commit changes to git
+ * Commit changes to git with updated timestamps
  * @returns {Promise<boolean>} Promise that resolves with true if commit was successful
  */
 function commitChanges() {
   return new Promise((resolve) => {
     try {
+      // Update timestamps one more time before committing
+      updateTimestampsBeforeCommit();
+      
+      // Stage all changes
       execSync('git add .', { cwd: notesDir });
       console.log('Changes staged for commit');
       
@@ -198,6 +202,54 @@ function commitChanges() {
       resolve(false);
     }
   });
+}
+
+/**
+ * Update timestamps for all changed files right before commit
+ */
+function updateTimestampsBeforeCommit() {
+  try {
+    // Get changed files
+    const changedFiles = getChangedFiles();
+    
+    // Update timestamp for each file
+    changedFiles.forEach(filePath => {
+      const fullPath = path.join(notesDir, filePath);
+      
+      try {
+        // Read the file content
+        const content = fs.readFileSync(fullPath, 'utf8');
+        
+        // Check if the file starts with JSON metadata
+        if (!content.trim().startsWith('{')) {
+          return; // Skip files without metadata
+        }
+        
+        // Extract the JSON part
+        const jsonEndIndex = content.indexOf('}') + 1;
+        const jsonPart = content.substring(0, jsonEndIndex);
+        const markdownPart = content.substring(jsonEndIndex).trim();
+        
+        try {
+          // Parse the JSON
+          const metadata = JSON.parse(jsonPart);
+          
+          // Update timestamp
+          metadata.updated = new Date().toISOString();
+          
+          // Write the updated content back to the file
+          const updatedContent = JSON.stringify(metadata, null, 2) + '\n\n' + markdownPart;
+          fs.writeFileSync(fullPath, updatedContent);
+        } catch (error) {
+          console.error(`Error updating timestamp in ${filePath}:`, error.message);
+        }
+      } catch (error) {
+        console.error(`Error reading file ${filePath}:`, error.message);
+      }
+    });
+  } catch (error) {
+    console.error('Error updating timestamps:', error.message);
+  }
 }
 
 /**
