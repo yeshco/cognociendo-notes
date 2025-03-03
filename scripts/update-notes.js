@@ -15,12 +15,12 @@ const rl = readline.createInterface({
 const notesDir = process.env.NOTES_DIR || '.'; // Default to current directory, override with NOTES_DIR env var
 
 /**
- * Get list of changed files in the git repository
- * @returns {Array} Array of changed file paths
+ * Get list of changed and new files in the git repository
+ * @returns {Array} Array of changed and new file paths
  */
 function getChangedFiles() {
   try {
-    // Get both staged and unstaged changes
+    // Get both staged, unstaged, and untracked changes
     const output = execSync('git status --porcelain', { cwd: notesDir }).toString();
     
     // Parse the output to get file paths
@@ -28,7 +28,9 @@ function getChangedFiles() {
       .split('\n')
       .filter(line => line.trim() !== '')
       .map(line => {
-        // Extract the file path (remove the status code at the beginning)
+        // Extract the file path
+        // Status codes are 2 characters, followed by a space, then the file path
+        // For untracked files, the status is "??" 
         const filePath = line.substring(3);
         return filePath;
       })
@@ -39,6 +41,29 @@ function getChangedFiles() {
       ); // Only include markdown files, exclude node_modules and README.md
   } catch (error) {
     console.error('Error getting changed files:', error.message);
+    return [];
+  }
+}
+
+/**
+ * Get list of all markdown files in the repository
+ * @returns {Array} Array of all markdown file paths
+ */
+function getAllMarkdownFiles() {
+  try {
+    // Use find command to get all markdown files
+    const output = execSync('find . -name "*.md" -not -path "*/node_modules/*" -not -path "*/\\.*" -not -name "README.md"', { cwd: notesDir }).toString();
+    
+    // Parse the output to get file paths
+    return output
+      .split('\n')
+      .filter(line => line.trim() !== '')
+      .map(line => {
+        // Remove the leading "./" if present
+        return line.startsWith('./') ? line.substring(2) : line;
+      });
+  } catch (error) {
+    console.error('Error getting all markdown files:', error.message);
     return [];
   }
 }
@@ -276,17 +301,31 @@ async function main() {
   console.log('Checking for changes in notes...');
   
   // Get changed files
-  const changedFiles = getChangedFiles();
+  let changedFiles = getChangedFiles();
+  
+  // If no changed files found, ask if user wants to process all markdown files
+  if (changedFiles.length === 0) {
+    console.log('No changes found in git.');
+    const processAllFiles = await askQuestion('Do you want to process all markdown files? (y/n): ');
+    
+    if (processAllFiles.toLowerCase() === 'y') {
+      changedFiles = getAllMarkdownFiles();
+    } else {
+      console.log('No files to process.');
+      rl.close();
+      return;
+    }
+  }
   
   if (changedFiles.length === 0) {
-    console.log('No changes found');
+    console.log('No files to process.');
     rl.close();
     return;
   }
   
-  console.log(`Found ${changedFiles.length} changed markdown files`);
+  console.log(`Found ${changedFiles.length} markdown files to process`);
   
-  // Process each changed file
+  // Process each file
   for (const file of changedFiles) {
     await updateFileMetadata(file);
   }
