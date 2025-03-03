@@ -184,13 +184,6 @@ function commitChanges() {
       } catch (error) {
         console.error('Error committing changes:', error.message);
       }
-
-      try {
-        execSync(`git push -u origin main`, { cwd: notesDir });
-        console.log('Changes pushed successfully');
-      } catch (error) {
-        console.error('Error pushing to origin:', error.message);
-      }
       
       rl.close();
     });
@@ -199,6 +192,19 @@ function commitChanges() {
     rl.close();
   }
 }
+
+function pushChanges() {
+  try {
+    execSync(`git push -u origin main`, { cwd: notesDir });
+    console.log('Changes pushed successfully');
+    
+    rl.close();
+  } catch (error) {
+    console.error('Error pushing to origin:', error.message);
+
+    rl.close();
+  }
+} 
 
 /**
  * Main function
@@ -231,9 +237,19 @@ async function main() {
     console.log('Changes not committed');
     rl.close();
   }
+  
+  // Ask if the user wants to push to origin
+  const pushAnswer = await askQuestion('\nDo you want to push these changes to origin? (y/n): ');
+  
+  if (pushAnswer.toLowerCase() === 'y') {
+    pushChanges();
+  } else {
+    console.log('Changes not pushed');
+    rl.close();
+  }
 }
 
-// Run the script
+// Run the main function
 main().catch(error => {
   console.error('Error:', error);
   rl.close();
