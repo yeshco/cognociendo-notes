@@ -4,7 +4,7 @@
     "algebra"
   ],
   "level": "3.a",
-  "updated": "2025-03-03T14:47:08.313Z"
+  "updated": "2025-03-03T15:33:18.718Z"
 }
 
 ### Polynomial
@@ -41,7 +41,7 @@ Polynomials can be divided in the same way [Terms](<Algebraic Term.md>) divided:
 
 When a polynomial has a complete sucession of exponents in a **literal**:
 $$
-a+a^3+a^4+a^2\\
+a+a^3+a^4+a^2\newline
 b3+a^5+c^2+a^4-a^3
 $$
 In both cases the **literal** $a$ has a full sucession of exponents in the first case from $1$ to $4$ , and in the second case from $5$ to $3$
