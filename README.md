@@ -1,6 +1,6 @@
 # Co(g)nociendo Notes
 
-This repository contains markdown files for the [co(g)nociendo](https://yourusername.github.io/cognociendo) website.
+This repository contains markdown files for the [co(g)nociendo](https://cognociendo.xyz) website.
 
 ## Structure
 
