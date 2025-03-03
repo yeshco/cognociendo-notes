@@ -32,7 +32,11 @@ function getChangedFiles() {
         const filePath = line.substring(3);
         return filePath;
       })
-      .filter(filePath => filePath.endsWith('.md')); // Only include markdown files
+      .filter(filePath => 
+        filePath.endsWith('.md') && 
+        !filePath.includes('node_modules/') && 
+        !filePath.includes('README.md')
+      ); // Only include markdown files, exclude node_modules and README.md
   } catch (error) {
     console.error('Error getting changed files:', error.message);
     return [];
@@ -168,43 +172,50 @@ function askQuestion(question) {
 
 /**
  * Commit changes to git
+ * @returns {Promise<boolean>} Promise that resolves with true if commit was successful
  */
 function commitChanges() {
-  try {
-    execSync('git add .', { cwd: notesDir });
-    console.log('Changes staged for commit');
-    
-    // Ask for commit message
-    rl.question('Enter commit message (or press enter for default): ', (message) => {
-      const commitMessage = message.trim() || 'Update notes metadata';
+  return new Promise((resolve) => {
+    try {
+      execSync('git add .', { cwd: notesDir });
+      console.log('Changes staged for commit');
       
-      try {
-        execSync(`git commit -m "${commitMessage}"`, { cwd: notesDir });
-        console.log('Changes committed successfully');
-      } catch (error) {
-        console.error('Error committing changes:', error.message);
-      }
-      
-      rl.close();
-    });
-  } catch (error) {
-    console.error('Error staging changes:', error.message);
-    rl.close();
-  }
+      // Ask for commit message
+      rl.question('Enter commit message (or press enter for default): ', (message) => {
+        const commitMessage = message.trim() || 'Update notes metadata';
+        
+        try {
+          execSync(`git commit -m "${commitMessage}"`, { cwd: notesDir });
+          console.log('Changes committed successfully');
+          resolve(true);
+        } catch (error) {
+          console.error('Error committing changes:', error.message);
+          resolve(false);
+        }
+      });
+    } catch (error) {
+      console.error('Error staging changes:', error.message);
+      resolve(false);
+    }
+  });
 }
 
+/**
+ * Push changes to git
+ * @returns {Promise<boolean>} Promise that resolves with true if push was successful
+ */
 function pushChanges() {
-  try {
-    execSync(`git push -u origin main`, { cwd: notesDir });
-    console.log('Changes pushed successfully');
-    
-    rl.close();
-  } catch (error) {
-    console.error('Error pushing to origin:', error.message);
-
-    rl.close();
-  }
-} 
+  return new Promise((resolve) => {
+    try {
+      execSync(`git push -u origin main`, { cwd: notesDir });
+      console.log('Changes pushed successfully');
+      resolve(true);
+    } catch (error) {
+      console.error('Error pushing to origin:', error.message);
+      resolve(false);
+    }
+  });
+}
 
 /**
  * Main function
@@ -232,21 +243,25 @@ async function main() {
   const commitAnswer = await askQuestion('\nDo you want to commit these changes? (y/n): ');
   
   if (commitAnswer.toLowerCase() === 'y') {
-    commitChanges();
+    const commitSuccess = await commitChanges();
+    
+    // Only ask about pushing if commit was successful
+    if (commitSuccess) {
+      // Ask if the user wants to push to origin
+      const pushAnswer = await askQuestion('\nDo you want to push these changes to origin? (y/n): ');
+      
+      if (pushAnswer.toLowerCase() === 'y') {
+        await pushChanges();
+      } else {
+        console.log('Changes not pushed');
+      }
+    }
   } else {
     console.log('Changes not committed');
-    rl.close();
   }
   
-  // Ask if the user wants to push to origin
-  const pushAnswer = await askQuestion('\nDo you want to push these changes to origin? (y/n): ');
-  
-  if (pushAnswer.toLowerCase() === 'y') {
-    pushChanges();
-  } else {
-    console.log('Changes not pushed');
-    rl.close();
-  }
+  // Close the readline interface
+  rl.close();
 }
 
 // Run the main function
