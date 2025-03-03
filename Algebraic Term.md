@@ -25,7 +25,7 @@ $5a^4b$ has a degree of $5$
 
 $6ab^7c^2$ has a degree of $9$
 
-And you can also say that in the first case $a$ has a 'relative' degree of $4$, and in the second case it has a relative degree of $1$
+And you can also say that in the first case $a$ has a 'relative' degree of $4$, and in the second case it has a relative degree of $7$
 
 ##### Types of Terms
 
