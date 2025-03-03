@@ -1,4 +1,4 @@
-{tags: networks, websites; level: 3.b;}
+{"tags": ["networks", "websites"], "level": "3.b"}
 
 # DNS record types
 

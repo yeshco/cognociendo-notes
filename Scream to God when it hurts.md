@@ -1,4 +1,4 @@
-{tags: hashkafah, emotions, tefilah; level: 2;}
+{"tags": ["hashkafah", "emotions", "tefilah"], "level": "2"}
 
 # Scream to God When it Hurts
 

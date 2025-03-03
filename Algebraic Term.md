@@ -1,4 +1,4 @@
-{tags: math, algebra; level: 3.a;}
+{"tags": ["math", "algebra"], "level": "3.a"}
 
 ### Algebraic Term
 
