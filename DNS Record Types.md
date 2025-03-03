@@ -8,8 +8,17 @@ Its the **main** record that links a domain name to the **physical IP** used by 
 ### CNAME
 This record points an alias domain name to a canonical **domain name,** this is only allowed for subdomains not apex domains
 #### Example
-Ok so this is how it works on this specific website for example:
-The apex record has to point to a specific physical IP, but what happens when that IP is hit is that its immediately redirected by the hosting provider to a subdomain, in this case www. So another DNS lookup is made there and there the record points to another domain not an actual IP, this allows the hosting provider to process the requests for better protection against attacks or other reasons.
+Example for this:
+
+This website has only two DNS records A and CNAME. 
+
+A is used here so the “naked website”; the apex domain can be accessed directly. 
+
+Now because the hosting provider wants to be able to filter requests and process them further any request to the physical IP made by looking at A is immediately rerouted to the subdomain www. 
+
+Here CNAME enters into play and points the request to the hosting domain that will handle the request.
+
+Removing A will make any apex request fail and www would need to be used to access the website. Removing CNAME in this case would make every request fail since CNAME here is the one actually pointing to the hosting domain.
 
 
 

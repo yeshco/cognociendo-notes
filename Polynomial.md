@@ -1,4 +1,11 @@
-{"tags": ["math", "algebra"], "level": "3.a"}
+{
+  "tags": [
+    "math",
+    "algebra"
+  ],
+  "level": "3.a",
+  "updated": "2025-03-03T14:47:08.313Z"
+}
 
 ### Polynomial
 
@@ -59,4 +66,3 @@ $$
 2a+5a+3
 $$
 $3$ is an independent with respect to $a$
-
