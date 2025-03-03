@@ -1,3 +1,5 @@
+{tags: hashkafah, emotions, tefilah; level: 2;}
+
 # Scream to God When it Hurts
 
 Thats what the שערים בתפילה says to do when something really hurts and theres no way to fix it. 

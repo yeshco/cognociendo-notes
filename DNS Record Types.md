@@ -1,3 +1,5 @@
+{tags: networks, websites; level: 3.b;}
+
 # DNS record types
 
 When deploying a website you typically use the domain provider to upload your records to the DNS using the IP information provided by your hosting provider, the hosting provider then checks that everything is in order and you're ready to go.

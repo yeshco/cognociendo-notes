@@ -1,3 +1,5 @@
+{tags: math, algebra; level: 3.a;}
+
 ### Polynomial
 
 An algebraic expression that has more than one [term](<Algebraic Term.md>):

@@ -1,3 +1,5 @@
+{tags: math, algebra; level: 3.a;}
+
 ### Algebraic Term
 
 An algebraic expression
