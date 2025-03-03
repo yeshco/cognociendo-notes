@@ -4,7 +4,7 @@
     "algebra"
   ],
   "level": "3.a",
-  "updated": "2025-03-03T15:39:58.874Z"
+  "updated": "2025-03-03T16:23:17.341Z"
 }
 
 ### Polynomial

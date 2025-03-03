@@ -4,7 +4,7 @@
     "websites"
   ],
   "level": "3.b",
-  "updated": "2025-03-03T14:49:44.342Z"
+  "updated": "2025-03-03T16:23:15.196Z"
 }
 
 # DNS record types
