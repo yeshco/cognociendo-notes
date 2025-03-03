@@ -4,7 +4,7 @@
     "algebra"
   ],
   "level": "3.a",
-  "updated": "2025-03-03T15:33:18.718Z"
+  "updated": "2025-03-03T15:39:58.874Z"
 }
 
 ### Polynomial
@@ -52,7 +52,7 @@ In both cases the **literal** $a$ has a full sucession of exponents in the first
 
 When the full polynomial (maybe even if it's not full?) is organized in an **ascending** or **descending** fashion:
 $$
-a+a^2+a^3+a^4\\
+a+a^2+a^3+a^4\newline
 b^43+a^5+b^3+a^4-a^3\div b^2
 $$
 The first case it's **ascending** for $a$, and in the second case it's **descending** for $b$ 

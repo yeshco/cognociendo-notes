@@ -184,6 +184,13 @@ function commitChanges() {
       } catch (error) {
         console.error('Error committing changes:', error.message);
       }
+
+      try {
+        execSync(`git push -u origin main`, { cwd: notesDir });
+        console.log('Changes pushed successfully');
+      } catch (error) {
+        console.error('Error pushing to origin:', error.message);
+      }
       
       rl.close();
     });
