@@ -1,8 +1,9 @@
 {
   "tags": ["Jewish History", "Language"],
   "level": "4.b",
-  "updated": "2025-03-05T10:24:40.000Z"
+  "updated": "2025-03-05T10:26:57.000Z"
 }
+
 
 
 
@@ -21,6 +22,6 @@ Now before I get to show you and talk about the old Hebrew alphabet I need to ex
 
 New Change lets see this
 
-New change lets see
+New change lets see!!!!
 
 [^*]: Im using Abjad here to also include Alphabets the main idea in both being that symbols express particular sounds and not ideas
