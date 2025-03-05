@@ -5,7 +5,7 @@
     "Sound"
   ],
   "level": "2",
-  "updated": "2025-03-03T16:23:17.342Z"
+  "updated": "2025-03-05T08:50:35.763Z"
 }
 
 # Waves
@@ -29,8 +29,6 @@ What do you measure in a wave?
 1. Amplitude: the maximum oscillation
 2. Wavelength: the distance between two crests
 3. Frequency: the number of oscillations trough time
-
-
 
 > To me this says something about the nature of this reality this עולם הזה it’s constant מה שהיה הוא שיהיה but it moves too.
 >
