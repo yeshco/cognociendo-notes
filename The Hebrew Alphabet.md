@@ -1,11 +1,11 @@
 {
-  "tags": [
-    "Jewish History",
-    "Language"
-  ],
+  "tags": ["Jewish History", "Language"],
   "level": "4.b",
-  "updated": "2025-03-05T09:37:44.372Z"
+  "updated": "2025-03-05T10:16:22.3NZ"
 }
+
+
+
 
 # The Hebrew Alphabet
 
@@ -18,5 +18,7 @@ Now before I get to show you and talk about the old Hebrew alphabet I need to ex
 > But also this created a change in you aren’t expressing yourself through symbols -> you’re looking at how ideas are expressed by humans -> sounds -> lets just describe sounds.
 
 New change lets see if it works, this should work shsjsjsj
+
+New change lets see
 
 [^*]: Im using Abjad here to also include Alphabets the main idea in both being that symbols express particular sounds and not ideas
