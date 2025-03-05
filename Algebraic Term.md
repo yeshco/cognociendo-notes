@@ -1,11 +1,9 @@
 {
-  "tags": [
-    "math",
-    "algebra"
-  ],
+  "tags": [],
   "level": "3.a",
   "updated": "2025-03-03T16:22:30.209Z"
 }
+
 
 ### Algebraic Term
 
@@ -37,11 +35,11 @@ And you can also say that in the first case $a$ has a 'relative' degree of $4$, 
 ##### Types of Terms
 
 1. Whole
-   1. A term that has no **literal** [denominator](Denominator.md) eg: $5a$ or $\frac {2a}{3}$
+   1. A term that has no **literal** [denominator](Denominator.md) eg: $5a$ or $rac {2a}{3}$
 2. Fractional
-   1. When it has a **literal** [denominator](Denominator.md) eg: $\frac {2a}{b}$ (is $\frac{2a}{2b}$ also fractionary?)
+   1. When it has a **literal** [denominator](Denominator.md) eg: $rac {2a}{b}$ (is $rac{2a}{2b}$ also fractionary?)
 3. Rational and Irrational
-   1. When the term doesn't have a root and Irrational when it has eg: $\sqrt{a}$ or $\frac{3b}{^3\sqrt{2a}}$
+   1. When the term doesn't have a root and Irrational when it has eg: $\sqrt{a}$ or $rac{3b}{^3\sqrt{2a}}$
 
 ##### Others:
 
