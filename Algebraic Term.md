@@ -1,5 +1,5 @@
 {
-  "tags": [],
+  "tags": [Math, algebra],
   "level": "3.a",
   "updated": "2025-03-03T16:22:30.209Z"
 }
