@@ -1,5 +1,5 @@
 {
-  "tags": [],
+  "tags": ["Hashkafah", "tefilah"],
   "level": "2",
   "updated": "2025-03-03T16:22:25.372Z"
 }
