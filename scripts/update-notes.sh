@@ -56,22 +56,21 @@ if [ -n "$MODIFIED_FILES" ]; then
       # Get the full path to the file
       full_path="$NOTES_DIR/$file"
       
+      # Read the current content of the file
+      content=$(cat "$full_path")
+      
       # Check if the file has frontmatter (starts with {)
-      if [[ $(head -1 "$full_path") == "{"* ]]; then
+      if [[ "$content" == "{"* ]]; then
         echo "JSON frontmatter found."
         
-        # Find the line number where the frontmatter ends
-        frontmatter_end_line=$(grep -n "^}$" "$full_path" | head -1 | cut -d: -f1)
+        # Extract frontmatter
+        frontmatter=$(echo "$content" | awk '/^{/,/^}$/')
         
-        if [ -z "$frontmatter_end_line" ]; then
-          echo "Error: Could not find the end of frontmatter. Skipping file."
-          continue
-        fi
+        # Extract content after frontmatter
+        content_after_frontmatter=$(echo "$content" | awk 'BEGIN{p=0} /^}$/{p=1;next} p{print}')
         
-        # Extract just the frontmatter for analysis
-        frontmatter=$(head -n "$frontmatter_end_line" "$full_path")
-        
-        # Extract current tags, level, and updated date
+        # Extract current tags, level, and updated date using more robust methods
+        # For tags, extract everything between "tags": and the next comma or closing brace
         current_tags=$(echo "$frontmatter" | grep -o '"tags": \[[^]]*\]' || echo '"tags": []')
         current_tags=${current_tags#'"tags": '}
         
@@ -148,16 +147,8 @@ if [ -n "$MODIFIED_FILES" ]; then
   \"updated\": \"$current_date\"
 }"
         
-        # Use sed to replace just the frontmatter portion in-place
-        # Create a temporary file for the sed command
-        temp_file=$(mktemp)
-        
-        # Replace the frontmatter lines with the updated frontmatter
-        sed "1,${frontmatter_end_line}c\\
-$updated_frontmatter" "$full_path" > "$temp_file"
-        
-        # Replace the original file with the temporary file
-        mv "$temp_file" "$full_path"
+        # Create a new file with updated frontmatter and original content
+        echo -e "$updated_frontmatter\n\n$content_after_frontmatter" > "$full_path"
         echo "Updated frontmatter in $file"
       else
         echo "No JSON frontmatter found. Skipping."
@@ -217,8 +208,11 @@ if [ -n "$UNTRACKED_FILES" ]; then
       # Get the full path to the file
       full_path="$NOTES_DIR/$file"
       
+      # Read the current content of the file
+      content=$(cat "$full_path")
+      
       # Check if the file already has frontmatter (starts with {)
-      if [[ $(head -1 "$full_path") != "{"* ]]; then
+      if [[ "$content" != "{"* ]]; then
         echo "No JSON frontmatter found. Adding new frontmatter."
         
         # Ask for tags
@@ -259,16 +253,8 @@ if [ -n "$UNTRACKED_FILES" ]; then
   \"updated\": \"$current_date\"
 }"
         
-        # Create a temporary file
-        temp_file=$(mktemp)
-        
-        # Add frontmatter to the beginning of the file and append original content
-        echo "$frontmatter" > "$temp_file"
-        echo -e "\n" >> "$temp_file"
-        cat "$full_path" >> "$temp_file"
-        
-        # Replace the original file with the temporary file
-        mv "$temp_file" "$full_path"
+        # Create a new file with frontmatter and original content
+        echo -e "$frontmatter\n\n$content" > "$full_path"
         echo "Added JSON frontmatter to $file"
       else
         echo "File already has frontmatter. Skipping."
