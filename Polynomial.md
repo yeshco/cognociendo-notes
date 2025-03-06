@@ -42,8 +42,6 @@ Polynomials can be divided in the same way [Terms](<Algebraic Term.md>) divided:
 When a polynomial has a complete sucession of exponents in a **literal**:
 $$
 a+a^3+a^4+a^2
-
-
 \newline
 b3+a^5+c^2+a^4-a^3
 $$
@@ -56,8 +54,6 @@ In both cases the **literal** $a$ has a full sucession of exponents in the first
 When the full polynomial (maybe even if it's not full?) is organized in an **ascending** or **descending** fashion:
 $$
 a+a^2+a^3+a^4
-
-
 \newline
 b^43+a^5+b^3+a^4-a^3\div b^2
 $$
