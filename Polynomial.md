@@ -6,13 +6,14 @@
 
 
 
+
 ### Polynomial
 
 An algebraic expression that has more than one [term](<Algebraic Term.md>):
 
-$a+3$  and  $rac{a}{b}+\sqrt{3}$ are polynomials of two terms each, they can also be called **binomials** 
+$a+3$  and  $rac{a}{b}+\sqrt{3}$ are polynomials of two terms each, they can also be called **binomials** 
 
-$a+3-4b$  and  $a^7b+rac{2}{a}\div5b$ are polynomials of three terms each, they can also be called **trinomials** 
+$a+3-4b$  and  $a^7b+rac{2}{a}\div5b$ are polynomials of three terms each, they can also be called **trinomials** 
 
 
 
@@ -42,6 +43,7 @@ When a polynomial has a complete sucession of exponents in a **literal**:
 $$
 a+a^3+a^4+a^2
 
+
 ewline
 b3+a^5+c^2+a^4-a^3
 $$
@@ -54,6 +56,7 @@ In both cases the **literal** $a$ has a full sucession of exponents in the first
 When the full polynomial (maybe even if it's not full?) is organized in an **ascending** or **descending** fashion:
 $$
 a+a^2+a^3+a^4
+
 
 ewline
 b^43+a^5+b^3+a^4-a^3\div b^2
