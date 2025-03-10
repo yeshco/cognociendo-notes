@@ -1,5 +1,5 @@
 {
-  "tags": ["Jewish Antiquity", "Israel", ¨palestine],
+  "tags": ["Jewish Antiquity", "Israel", "palestine"],
   "level": "2",
   "updated": "2025-03-10T16:23:17.341Z"
 }
