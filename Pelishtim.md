@@ -1,4 +1,8 @@
-
+{
+  "tags": ["Tanach", "Goyim"],
+  "level": "3.b",
+  "updated": "2024-10-17T17:08:10.341Z"
+}
 
 # Pelishtim
 
@@ -32,5 +36,4 @@ Their name comes probably from the word פלישה = invasion[^F]. They were pro
 [^G] *Raamses III talks about "Peleset" people he fought that then settled in the "Amori" land*
 [^H] Apparently *Israel even went to the Pelishtim to get iron weapons*
 [^I] This is the story of פסל מיכה
-
 
