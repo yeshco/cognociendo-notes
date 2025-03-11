@@ -1,8 +1,9 @@
 {
   "tags": ["Tanach", "Goyim"],
   "level": "3.b",
-  "updated": "2025-03-11T19:37:31.000Z"
+  "updated": "2025-03-11T19:41:04.000Z"
 }
+
 
 
 
@@ -15,7 +16,7 @@ Their name comes probably from the word פלישה = invasion[^F]. They were pro
 
 ##### Timeline
 - Around the year ~1200 a group of Mycenaeans clash with Egypt[^G], they lose the battles but not the war, Egypt starts falling into a long decline where they loose their authority over Canaan.
-- This Mycenaeans bands take advantage of that and displacing the previous inhabitants[^C] of the coast settle there a deserts throw away from Egypt.
+- This Mycenaeans bands take advantage of that and displacing the previous inhabitants[^C] of the south coast of Isreal they settle there a deserts throw away from Egypt.
 - At around the same time Israel being slaves of Egypt for 200+ years finally escape Egypts prompted by the 10 plagues that Egypt suffered.
 - Their aim is the land of Canaan but God decides they will not to go trough the Mycenaean encampments and instead will go into the desert[^B].
 - 40 years later Israel comes out the desert and enters Canaan from the east and starts conquering the land.
