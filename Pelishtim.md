@@ -1,8 +1,9 @@
 {
   "tags": ["Tanach", "Goyim"],
   "level": "3.b",
-  "updated": "2025-03-11T19:35:59.000Z"
+  "updated": "2025-03-11T19:37:31.000Z"
 }
+
 
 
 # Pelishtim
@@ -20,7 +21,7 @@ Their name comes probably from the word פלישה = invasion[^F]. They were pro
 - 40 years later Israel comes out the desert and enters Canaan from the east and starts conquering the land.
 - The mountains are completely conquered for Israel, but they don't attack the Mycenaeans (except maybe the cities that encroach on the mountain (old Mycenaeans?).
 - Most of Israel settles in the land and relaxes, but the tribe of דן has most of his inheritance allotted to him in the plain just north of the Mycenaeans cities.
-- Fighting alone against them is impossible to דן *since the Mycenaeans are much more technologically advanced*[^H] so they decide to also look for other places to settle and parts of them end up in the north[^I].
+- Fighting alone against them is impossible to דן *since the Mycenaeans are much more technologically advanced than them*[^H] so they decide to also look for other places to settle and parts of them end up in the north[^I].
 - For 150+ years there's probably not many issues with the Mycenaeans/Pelishtim since most of Israel doesn't touch them, Yehuda has an humongous track of land in the mountains and Dan is divided in two.
 - But after that the growing families of Dan in the south probably start encroaching onto the Pelishtim and that's when a man from one of the original cities of Dan on the frontier with Yehuda starts looking for trouble in the lowlands and the plains with the Pelishtim.
 - This fighting will only intensify as the nation of Israel starts uniting and probably wanted to rule over all nations around them.
