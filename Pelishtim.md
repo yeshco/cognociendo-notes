@@ -1,8 +1,9 @@
 {
   "tags": ["Tanach", "Goyim"],
   "level": "3.b",
-  "updated": "2024-10-17T17:08:10.341Z"
+  "updated": "2025-03-11T19:35:59.000Z"
 }
+
 
 # Pelishtim
 
@@ -10,6 +11,7 @@ A strong aggressive/warring nation[^E], probably the remnants of some of the sea
 So probably Mycenaean people[^D] who left the aegean island after their civilization collapsed.
 
 Their name comes probably from the word פלישה = invasion[^F]. They were probably called the invaders because they weren't from there[^A].
+
 ##### Timeline
 - Around the year ~1200 a group of Mycenaeans clash with Egypt[^G], they lose the battles but not the war, Egypt starts falling into a long decline where they loose their authority over Canaan.
 - This Mycenaeans bands take advantage of that and displacing the previous inhabitants[^C] of the coast settle there a deserts throw away from Egypt.
@@ -36,4 +38,3 @@ Their name comes probably from the word פלישה = invasion[^F]. They were pro
 [^G] *Raamses III talks about "Peleset" people he fought that then settled in the "Amori" land*
 [^H] Apparently *Israel even went to the Pelishtim to get iron weapons*
 [^I] This is the story of פסל מיכה
-
