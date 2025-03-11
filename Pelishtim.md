@@ -1,10 +1,8 @@
 {
   "tags": ["Tanach", "Goyim"],
   "level": "3.b",
-  "updated": "2025-03-11T19:41:04.000Z"
+  "updated": "2025-03-11T19:41:40.000Z"
 }
-
-
 
 
 # Pelishtim
