@@ -1,10 +1,8 @@
 {
   "tags": ["Jewish History", "Language"],
   "level": "4.b",
-  "updated": "2025-03-05T10:49:40.000Z"
+  "updated": "2025-03-26T15:45:49.000Z"
 }
-
-
 
 # The Original Hebrew Alphabet
 
