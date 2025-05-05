@@ -1,7 +1,7 @@
 {
   "tags": ["Tanach", "Goyim"],
   "level": "3.b",
-  "updated": "2025-03-11T19:46:36.000Z"
+  "updated": "2025-05-05T15:03:43.000Z"
 }
 
 # Pelishtim
@@ -28,12 +28,12 @@ Their name comes probably from the word פלישה = invasion[^F]. They were pro
 
 
 -----
-[^A] *There were פלישתים at the time of אברהם and יצחק too... so maybe Mycenaeans had already settled on that coast (like greeks would in later years settle all over the mediterranean) although not in the same cities but a bit more inland*. The reason why dorians might have later on not settled on the coast of Israel might have been do to these Myceneans who spoke another language.
-[^B] Going trough the coast to Israel right after leaving Egypt would have meant literally going trough the encampments of a freshly arrived horde of warriors (probably bloodlusted from fresh battles (Vikings of antiquity)). 
-[^C] The pasuk in Devarim [2:23] says that Caftorim (from crete? (mycenea)) moved the "Avim" from their location close to Aza
-[^D] *The Pelishtim apparently eat some kind of pig that comes from the aegean, their pottery is also similar to greek pottery*
-[^E] *The personal guard/fuerzas de elite of David is made of כרתי and פלתי (Cretans/Pelishtim ?) (makes one remember of the Varingians)*
-[^F] "The invaders" which is interesting that that's the name the Palestinians kept up until now. It's interesting that the west always called this land by the name of it's western Invaders. The name was probably popular among greeks and then romans for the land of Israel because when they came from the sea this was the land that received them.
-[^G] *Raamses III talks about "Peleset" people he fought that then settled in the "Amori" land*
-[^H] Apparently *Israel even went to the Pelishtim to get iron weapons*
-[^I] This is the story of פסל מיכה
+[^A]: *There were פלישתים at the time of אברהם and יצחק too... so maybe Mycenaeans had already settled on that coast (like greeks would in later years settle all over the mediterranean) although not in the same cities but a bit more inland*. The reason why dorians might have later on not settled on the coast of Israel might have been do to these Myceneans who spoke another language.
+[^B]: Going trough the coast to Israel right after leaving Egypt would have meant literally going trough the encampments of a freshly arrived horde of warriors (probably bloodlusted from fresh battles (Vikings of antiquity)). 
+[^C]: The pasuk in Devarim [2:23] says that Caftorim (from crete? (mycenea)) moved the "Avim" from their location close to Aza
+[^D]: *The Pelishtim apparently eat some kind of pig that comes from the aegean, their pottery is also similar to greek pottery*
+[^E]: *The personal guard/fuerzas de elite of David is made of כרתי and פלתי (Cretans/Pelishtim ?) (makes one remember of the Varingians)*
+[^F]: "The invaders" which is interesting that that's the name the Palestinians kept up until now. It's interesting that the west always called this land by the name of it's western Invaders. The name was probably popular among greeks and then romans for the land of Israel because when they came from the sea this was the land that received them.
+[^G]: *Raamses III talks about "Peleset" people he fought that then settled in the "Amori" land*
+[^H]: Apparently *Israel even went to the Pelishtim to get iron weapons*
+[^I]: This is the story of פסל מיכה
