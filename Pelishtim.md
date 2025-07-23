@@ -1,7 +1,7 @@
 {
   "tags": ["Tanach", "Goyim"],
   "level": "3.b",
-  "updated": "2025-05-05T15:03:43.000Z"
+  "updated": "2025-07-23T06:50:28.000Z"
 }
 
 # Pelishtim
@@ -27,7 +27,6 @@ Their name comes probably from the word פלישה = invasion[^F]. They were pro
 
 
 
------
 [^A]: *There were פלישתים at the time of אברהם and יצחק too... so maybe Mycenaeans had already settled on that coast (like greeks would in later years settle all over the mediterranean) although not in the same cities but a bit more inland*. The reason why dorians might have later on not settled on the coast of Israel might have been do to these Myceneans who spoke another language.
 [^B]: Going trough the coast to Israel right after leaving Egypt would have meant literally going trough the encampments of a freshly arrived horde of warriors (probably bloodlusted from fresh battles (Vikings of antiquity)). 
 [^C]: The pasuk in Devarim [2:23] says that Caftorim (from crete? (mycenea)) moved the "Avim" from their location close to Aza
